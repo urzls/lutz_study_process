@@ -1,0 +1,28 @@
+def f(a, b, c): print(a, b, c)
+f(1, 2, 3)
+f(c=3, b=6, a=1)
+f(1, c=5, b=2)
+print('========')
+
+def f(a, b=2, c=3): print (a, b, c)
+f(9)
+f(a=3)
+f(5, 2)
+f(5, 2, 8)
+f(1, c=6)
+print('========')
+
+def f(*args): print(args)
+f()
+f(1)
+f(1, 2, 3, 4)
+print('========')
+
+def f(**args): print(args)
+f()
+f(a=1, b=2)
+f(a=1, b=2, c=6, d=34)
+print('========')
+
+def f(a, *pargs, **kargs): print(a, pargs, kargs)
+f(1, 2, 3, x=1, y=2)

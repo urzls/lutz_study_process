@@ -1,0 +1,31 @@
+print ((1, 2) + (3, 4))
+print ((1, 2) * 4)
+T = (1, 2, 3, 4)
+print (T[0], T[1:3])
+x = (40)
+print (x)
+y = (40,)
+print (y)
+
+T = ('cc', 'aa', 'dd', 'bb')
+tmp = list(T)
+tmp.sort()
+print (tmp)
+T = tuple(tmp)
+print (T)
+print (sorted(T))
+print ('======================')
+
+T = (1, 2, 3, 4, 5)
+L = [x + 20 for x in T]
+print (L)
+print ('======================')
+T = (1, 2, 3, 2, 4, 2)
+print (T.index(2))
+print (T.index(2, 2))
+print (T.count(2))
+print ('======================')
+T = (1, [2, 3], 4)
+T[1][0] = 'spam'
+print (T)
+
